@@ -1,0 +1,26 @@
+@media (min-width: 320px) and (max-width: 768px) {
+  .banner {
+    width: 100%;
+    height: 450px;
+  }
+
+  .wraps {
+    flex-direction: column;
+  }
+
+  .navbar > li {
+    padding: 25px 0px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 999px) {
+    .banner{
+        width: 800px;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1439px) {
+  .banner {
+    width: 1000px;
+  }
+}
