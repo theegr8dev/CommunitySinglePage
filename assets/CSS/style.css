@@ -1,0 +1,99 @@
+@import url("http://fonts.cdnfonts.com/css/clash-display");
+@import url("http://fonts.cdnfonts.com/css/sf-pro-display");
+:root {
+  --skyblue: rgb(82, 113, 255);
+  --blue: #022e70;
+  --general: rgb(255, 255, 255);
+  --darkblue: #002c6e;
+  --banner-color: rgb(244, 246, 255);
+  --button-bg: #5271ff;
+
+  --clash: "Clash Display", sans-serif;
+  --sf: "SF Pro Display", sans-serif;
+}
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/**************** Utitlies Styling ****************/
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+}
+
+/**************** Utitlies Ended ****************/
+.container {
+  background: var(--banner-color);
+}
+.banner {
+  height: 400px;
+  width: 1440px;
+  margin: 0 auto;
+}
+
+/**************** NavBar Styling ****************/
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 25px;
+}
+.nav-brand {
+  display: flex;
+  align-items: center;
+}
+.nav-brand img {
+  width: 35px;
+}
+
+.nav-brand h2 {
+  font-family: var(--sf);
+  color: var(--darkblue);
+  font-size: 25px;
+  margin-left: 5px;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar > li {
+  padding: 0 25px;
+}
+
+.navbar .nav-list a {
+  font-family: var(--sf);
+  color: var(--blue);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.nav-button {
+  display: flex;
+  align-items: center;
+}
+
+.nav-button a {
+  font-family: var(--clash);
+  font-size: 15px;
+  font-weight: 500;
+  background-color: var(--button-bg);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  color: var(--general);
+  padding: 15px 20px;
+}
+.nav-button a img {
+  margin-left: 5px;
+  width: 80px;
+}
+/**************** NavBar Ending ****************/
