@@ -7,6 +7,7 @@
   --darkblue: #002c6e;
   --banner-color: rgb(244, 246, 255);
   --button-bg: #5271ff;
+  --cover-color: #3252e5;
 
   --clash: "Clash Display", sans-serif;
   --sf: "SF Pro Display", sans-serif;
@@ -27,16 +28,18 @@ a {
   text-decoration: none;
 }
 
-.wraps{
-    flex-wrap: wrap;
+.wraps {
+  flex-wrap: wrap;
 }
-
+.pad {
+  padding-left: 10px;
+}
 /**************** Utitlies Ended ****************/
 .container {
   background: var(--banner-color);
 }
 .banner {
-  height: 400px;
+  height: 500px;
   width: 1440px;
   margin: 0 auto;
 }
@@ -99,3 +102,108 @@ nav {
   width: 80px;
 }
 /**************** NavBar Ending ****************/
+
+/**************** Main Styling ****************/
+main {
+  margin: 4% auto;
+}
+.content {
+  width: 60%;
+  margin: 0 auto;
+}
+.content h1 {
+  font-family: var(--clash);
+  font-size: 75px;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--button-bg);
+}
+.content h1 span {
+  color: var(--blue);
+}
+.content p {
+  font-family: var(--sf);
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  color: var(--blue);
+}
+
+.content-img {
+  margin: 38px 0;
+  display: flex;
+  justify-content: center;
+}
+.content-img img {
+  width: 60%;
+}
+/**************** Main Ending ****************/
+
+/**************** about styling ****************/
+.about {
+  background: var(--button-bg);
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  border-radius: 20px;
+  color: var(--banner-color);
+}
+.about h3 {
+  font-family: var(--clash);
+  font-size: 30px;
+  font-weight: bolder;
+}
+.about p {
+  font-family: var(--sf);
+  font-size: 15px;
+}
+
+.about > div {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  padding: 60px 10px;
+}
+
+.about img {
+  width: 50px;
+}
+
+/**************** about Ending ****************/
+.cover-bottom {
+  position: relative;
+}
+.cover-top::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 16px;
+  width: 30px;
+  height: 30px;
+  background: var(--cover-color);
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.one,
+.two,
+.three {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 145px;
+  left: 40px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background: var(--cover-color);
+}
+.three {
+  left: 95px;
+  top: 150px;
+}
+.project img {
+  width: 20%;
+}
