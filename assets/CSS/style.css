@@ -162,27 +162,31 @@ main {
   flex-direction: column;
   align-items: center;
 }
+.icon-3 p{
+  margin-left: 0;
+}
 .icon-3 .profiles {
-  border: 1px solid green;
   position: relative;
   display: flex;
 }
-/* 
-.pro-4 {
-  position: absolute;
-  left: 148px;
+
+
+.profiles img {
+  width: 40px;
 }
-.pro-3 {
-  position: absolute;
-  left: 99px;
+
+.profiles > :first-child {
+  position: relative;
+  z-index: 1;
 }
-.pro-2 {
-  position: absolute;
-  left: 50px;
+.profiles > :nth-last-child(2) {
+  position: relative;
+  z-index: -1;
 }
-.pro-1 {
-  position: absolute;
-} */
+
+.profiles > * {
+  margin-left: -5%;
+}
 
 .icon-4 {
   display: flex;
@@ -225,7 +229,6 @@ main {
 .about img {
   width: 50px;
 }
-
 
 /**************** about Ending ****************/
 .cover-bottom {
