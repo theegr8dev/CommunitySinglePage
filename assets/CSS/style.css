@@ -110,6 +110,7 @@ main {
 .content {
   width: 60%;
   margin: 0 auto;
+  position: relative;
 }
 .content h1 {
   font-family: var(--clash);
@@ -136,6 +137,59 @@ main {
 }
 .content-img img {
   width: 60%;
+}
+.group-icon-1 {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 240px;
+  width: 100%;
+}
+.group-icon-1 > div {
+  background-color: var(--general);
+  border-radius: 10px;
+  transform: rotate(10deg);
+}
+.group-icon-2 {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 450px;
+  width: 100%;
+}
+.icon-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icon-3 .profiles {
+  border: 1px solid green;
+  position: relative;
+  display: flex;
+}
+/* 
+.pro-4 {
+  position: absolute;
+  left: 148px;
+}
+.pro-3 {
+  position: absolute;
+  left: 99px;
+}
+.pro-2 {
+  position: absolute;
+  left: 50px;
+}
+.pro-1 {
+  position: absolute;
+} */
+
+.icon-4 {
+  display: flex;
+  align-items: center;
+}
+.icon-4 img {
+  width: 20%;
 }
 /**************** Main Ending ****************/
 
@@ -171,6 +225,7 @@ main {
 .about img {
   width: 50px;
 }
+
 
 /**************** about Ending ****************/
 .cover-bottom {
